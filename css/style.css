@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
-.headerWrapper {
+.sidebar {
     background-color: #000000;
     color: #B3B3B3;
     width: 230px;
     height: 100vh;
     display: flex;
+    position: fixed;
+    top: 0;
+    border: 0;
+    left: 0;
 }
 
 header {
@@ -20,22 +24,22 @@ header {
     position: relative;
 }
 
-.logo a{
+.logo a {
     width: 70%;
     margin-bottom: 20px;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.icons{
+.icons {
     margin-right: 20px;
 }
 
-.navbar li a{
+.navbar li a {
     width: 70%;
     list-style: none;
     text-decoration: none;
@@ -45,7 +49,7 @@ header {
     margin: 20px auto;
 }
 
-.navbar li span{
+.navbar li span {
     margin-left: 20px;
 }
 
@@ -54,11 +58,11 @@ header {
     margin: 0 auto;
 }
 
-.playlistConainer h3{
+.playlistConainer h3 {
     margin-top: 15px;
 }
 
-.playlistConainer button{
+.playlistConainer button {
     background: none;
     border: none;
     outline: none;
@@ -66,21 +70,22 @@ header {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    cursor: pointer;
 }
 
-.playlistConainer span{
+.playlistConainer span {
     color: white;
     font-size: 15px;
     margin-left: 20px;
 }
 
-.footer{
+.footer {
     position: absolute;
     left: 0;
     bottom: 30px;
 }
 
-.items{
+.items {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
@@ -88,23 +93,23 @@ header {
     text-align: start;
 }
 
-.item a{
+.item a {
     text-decoration: none;
     color: #b3b3b3;
     font-size: small;
     line-height: 2.0;
 }
 
-.item{
+.item {
     margin-right: 20px;
 }
 
-.cookiebtn{
+.cookiebtn {
     width: 100%;
     display: flex;
 }
 
-.cookiebtn button{
+.cookiebtn button {
     background: none;
     padding: 6px 10px;
     color: white;
@@ -116,25 +121,90 @@ header {
     margin-bottom: 40px;
 }
 
-.cookiebtn span{
+.cookiebtn span {
     margin-left: 5px;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     font-weight: 700;
     font-size: large;
 }
 
-.playlistConainer button:hover{
+.playlistConainer button:hover {
     font-weight: 700;
     font-size: large;
 }
 
-.item a:hover{
+.item a:hover {
     font-weight: 700;
 }
 
-.cookiebtn button:hover{
+.cookiebtn button:hover {
     border: 1px solid white;
     font-weight: 700;
+}
+
+main {
+    margin-left: 230px;
+    margin-top: 60px;
+    background-color: #202020;
+    /*727272*/
+    height: 200vh;
+}
+
+.topheader {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 230px;
+    right: 0;
+}
+
+.lefttopheader {
+    margin-left: 20px;
+}
+
+.righttopheader {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.signup button{
+    background: none;
+    border: none;
+    outline: none;
+    color: #B3B3B3;
+    font-weight: 900;
+    margin-right: 20px;
+    font-size: large;
+}
+
+.login button{
+    background: #d9d9d9;
+    color: #000000;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    font-weight: 900;
+    font-size: large;
+}
+
+.signup button:hover{
+    color: #ffffff;
+    font-size: large;
+}
+
+.login button:hover{
+    background: #ffffff;
+    font-size: large;
+}
+
+main h1{
+    color: white;
 }
