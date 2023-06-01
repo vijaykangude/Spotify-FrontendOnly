@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #202020;
+}
+
 .sidebar {
     background-color: #000000;
     color: #B3B3B3;
@@ -175,7 +179,7 @@ main {
     margin-right: 30px;
 }
 
-.signup button{
+.signup button {
     background: none;
     border: none;
     outline: none;
@@ -185,7 +189,7 @@ main {
     font-size: large;
 }
 
-.login button{
+.login button {
     background: #d9d9d9;
     color: #000000;
     border: none;
@@ -195,16 +199,40 @@ main {
     font-size: large;
 }
 
-.signup button:hover{
+.signup button:hover {
     color: #ffffff;
     font-size: large;
 }
 
-.login button:hover{
+.login button:hover {
     background: #ffffff;
     font-size: large;
 }
 
-main h1{
+main h2 {
     color: white;
+}
+
+.imgContainer {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    top: 118px;
+    left: 115px;
+}
+
+.imageWrapper {
+    display: flex;
+}
+
+.button button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.cards{
+    display: flex;
 }
