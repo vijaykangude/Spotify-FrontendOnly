@@ -3,10 +3,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #202020;
+    color: #ffffff;
 }
 
 .sidebar {
@@ -176,7 +178,7 @@ main {
     margin-left: 20px;
 }
 
-.lefttopheader path:hover{
+.lefttopheader path:hover {
     fill: #ffffff;
     cursor: pointer;
 }
@@ -244,7 +246,7 @@ main h2 {
     cursor: pointer;
 }
 
-.cards{
+.cards {
     display: flex;
     margin-left: 20px;
     cursor: pointer;
@@ -256,18 +258,18 @@ main h2 {
     font-family: 'Geologica', sans-serif;
 }
 
-.cardDetails h3{
+.cardDetails h3 {
     color: #ffffff;
     font-weight: 800;
     line-height: 1.5;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
 }
 
-.desc{
+.desc {
     width: 0;
     min-width: 82%;
     text-align: justify;
@@ -275,24 +277,90 @@ main h2 {
     line-height: 1.3;
 }
 
-.cardContainer{
+.cardContainer {
     overflow-x: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
-.cardContainer::-webkit-scrollbar{
+.cardContainer::-webkit-scrollbar {
     display: none;
 }
 
-.card:hover{
+.card:hover {
     background-color: #4f4f4f;
 }
 
-.imgContainer path:hover{
+.imgContainer path:hover {
     fill: #0a9e48;
 }
 
-button{
+button {
     cursor: pointer;
+}
+
+.leftFooterWrapper {
+    display: flex;
+}
+
+.footerCard h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footerCard {
+    margin-right: 40px;
+}
+
+.item {
+    font-weight: 500;
+}
+
+.item a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footerWrapper {
+    margin-top: 40px;
+    font-family: 'Helvetica Neue', helvetica, arial, 'Hiragino Kaku Gothic Pro', Meiryo, 'MS Gothic';
+    height: 60vh;
+}
+
+.rightFooterWrapper {
+    display: flex;
+}
+
+.footer-img {
+    margin: 0 10px;
+}
+
+.paddingWrapper {
+    display: flex;
+    padding: 34px;
+    justify-content: space-between;
+}
+
+.socialContainer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c3c3c;
+    border-radius: 50%;
+}
+
+.socialContainer:hover {
+    background-color: #afafaf;
+}
+
+.copyrightFooter{
+    padding: 0 34px;
+}
+
+.copyrightFooter p {
+    margin-top: 35px;
+    color: #b3b3b3;
 }
